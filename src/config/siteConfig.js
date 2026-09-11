@@ -20,9 +20,9 @@ export const siteConfig = {
 
   // Replace these three EmailJS values after creating an EmailJS template.
   emailJs: {
-    serviceId: 'service_il6ljmb',
-    templateId: 'template_tvo8xzu',
-    publicKey: 'GXz-9kFMRnR1kyf-n',
+    serviceId: 'service_j8b6w5o',
+    templateId: 'template_nk2zecg',
+    publicKey: 'PQYsn0J209O-QfP8s',
   },
 
   // All image files live in /public/images so they are very easy to replace.
