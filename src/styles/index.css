@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f4f1e8;
+  color: #10271c;
+  font-family: Inter, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+::selection {
+  background: #10271c;
+  color: #f4f1e8;
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-[1600px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply text-[10px] font-semibold uppercase tracking-[0.34em] text-[#536554] sm:text-[11px];
+  }
+
+  .display-heading {
+    @apply font-display font-normal leading-[0.96] tracking-[-0.04em];
+  }
+
+  .outline-button {
+    @apply inline-flex items-center gap-4 rounded-full border border-[#173326] px-6 py-3 text-sm font-medium transition duration-300 hover:bg-[#173326] hover:text-white;
+  }
+
+  .solid-button {
+    @apply inline-flex items-center gap-4 rounded-full bg-[#173326] px-6 py-3 text-sm font-medium text-white transition duration-300 hover:bg-[#294b3b];
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
